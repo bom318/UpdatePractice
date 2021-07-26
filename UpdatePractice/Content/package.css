@@ -1,0 +1,51 @@
+﻿table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid gray;
+    margin-top: 30px;
+}
+th {
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    border: 1px dotted lightgray;
+
+}
+.name {
+    width: 9.5%;
+}
+
+#state {
+    width: 5%;
+}
+.textInput {
+    width: 100%;
+}
+.plus {
+    width: 15%;
+    margin-left: 5px;
+    float: right;
+    background: lightsteelblue;
+    border-radius: 3px;
+}
+.version {
+    width: 80%;
+}
+.selec {
+    width: 40%;
+}
+#serverInput {
+    width: 100%;
+}
+.btTd {
+    text-align: center;
+}
+.bt {
+    margin: 3px;
+    width: 67px;
+    background: aliceblue;
+    border-radius: 5px;
+    border: 2px solid lightslategray;
+}

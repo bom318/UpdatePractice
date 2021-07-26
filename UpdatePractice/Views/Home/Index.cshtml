@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/Content/login.css" rel="stylesheet" />
+<div>
+    <form method="post" class="login">
+        <div class="box">
+            <span>아이디</span>
+            <input type="text" name="userId" required/>
+        </div>
+        <div class="box">
+            <span>비밀번호</span>
+            <input type="password" name="userPw" required />
+        </div>
+        <input type="submit" value="로그인" id="logBt"/>
+    </form>
+</div>

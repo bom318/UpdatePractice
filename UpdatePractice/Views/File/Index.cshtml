@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/File.js"></script>
+
+<link href="~/Content/file.css" rel="stylesheet" />
+<link href="~/Content/package.css" rel="stylesheet" />
+<div>
+    <form class="addFile">
+        <span>신규 파일 추가 : </span>
+        <input type="file" class="fileInput" id="addInput"/>
+        <input type="button" value="업로드" class="bt" onclick="addFile();"/>
+    </form>
+</div>
+<div>
+    <form class="updateFile">
+        <span>기존 파일 업데이트 : </span>
+        <input type="file" class="fileInput" id="udtInput"/>
+        <input type="button" value="업로드" class="bt" onclick="udtFile();"/>
+    </form>
+</div>
+<table>
+    <tr>
+        <th class="num">번호</th>
+        <th>FileName</th>
+        <th>local</th>
+        <th>tagName</th>
+        <th>version</th>
+        <th class="type">type</th>
+        <th>reg</th>
+        <th class="size">size</th>
+        <th>기능</th>
+    </tr>
+    <tbody class="file_list">
+        <tr>
+            <td>
+                <span></span>
+            </td>
+            <td>
+                <span></span>
+            </td>
+            <td>
+                <input type="text" name="local" class="textInput" />
+            </td>
+            <td>
+                <input type="text" name="tagName" class="textInput" />
+            </td>
+            <td>
+                <input type="text" name="version" id="version" />
+                <input type="button" value="+" class="plus" />
+            </td>
+            <td>
+                <input type="text" name="type" class="textInput" />
+            </td>
+            <td>
+                <input type="text" name="reg" class="textInput" />
+            </td>
+            <td>
+                <span></span>
+            </td>
+            <td class="btTd">
+                <input type="button" value="적용" class="bt" />
+                <input type="button" value="삭제" class="bt" />
+            </td>
+        </tr>
+    </tbody>
+</table>

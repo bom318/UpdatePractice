@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/package.js"></script>
+<link href="~/Content/package.css" rel="stylesheet" />'
+
+<table border="0" cellspacing="0" cellpadding="0" id="information">
+    <tr>
+        <th class="name">
+            App 이름
+        </th>
+        <th class="name">
+            App cmd
+        </th>
+        <th>
+            version
+        </th>
+        <th>
+            등록서버
+        </th>
+        <th>
+            경로
+        </th>
+        <th id="state">
+            상태
+        </th>
+        <th>
+            메모
+        </th>
+        <th>
+            기능
+        </th>
+    </tr>
+    <tbody class="app_list">
+        <tr>
+            <td>
+                <input type="text" name="appName" class="textInput" />
+            </td>
+            <td>
+                <input type="text" name="appCmd" class="textInput" />
+            </td>
+            <td class="versionTd">
+                <input type="text" name="version" class="textInput" id="version" />
+                <input type="button" value="+" class="plus" />
+            </td>
+            <td class="serverTd">
+                <select class="selec">
+                    <option value="http://">http://</option>
+                    <option value="https://">https://</option>
+                </select>
+                <input type="text" name="server" class="textInput" id="serverInput" value="" />
+            </td>
+            <td>
+                <input type="text" name="path" class="textInput" value="" />
+            </td>
+            <td>
+                <span class="state"></span>
+            </td>
+            <td>
+                <textarea name="memo"></textarea>
+            </td>
+            <td class="btTd">
+                <input type="button" value="적용" class="bt" onclick="UpdateApp();" />
+                <input type="button" value="중지" class="bt" />
+                <input type="button" value="파일관리" class="bt" />
+                <input type="button" value="삭제" class="bt" />
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                <input type="text" id="new_appName" class="textInput" />
+            </td>
+            <td>
+                <input type="text" id="new_appCmd" class="textInput" />
+            </td>
+            <td>
+            </td>
+            <td>
+                <select id="new_protocol">
+                    <option value="http://">http://</option>
+                    <option value="https://">https://</option>
+                </select>
+                <input type="text" id="new_server" class="textInput" />
+            </td>
+            <td>
+                <input type="text" id="new_path" class="textInput" />
+            </td>
+            <td>
+            </td>
+            <td>
+                <textarea id="new_memo"></textarea>
+            </td>
+            <td class="btTd">
+                <input type="button" value="추가" class="bt" id="addBt" onclick="InsertNewApp();" />
+            </td>
+        </tr>
+    </tfoot>
+</table>
+

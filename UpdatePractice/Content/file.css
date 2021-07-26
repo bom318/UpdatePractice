@@ -1,0 +1,22 @@
+﻿.addFile {
+    display: flex;
+    margin-top: 30px;
+
+}
+.fileInput {
+    margin-left: 10px;
+}
+.updateFile {
+    display: flex;
+    margin: 10px 0;
+}
+
+.num {
+    width: 5%;
+}
+.type {
+    width: 8%;
+}
+.size {
+    width: 8%;
+}
